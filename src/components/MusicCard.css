@@ -1,0 +1,77 @@
+.div-card {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.div-card p {
+  color: #001813;
+  font-family: Epilogue , sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  width: 40%;
+}
+
+.div-card audio {
+  margin: 10px 20px;
+  width: 40%;
+}
+
+.div-card label {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Epilogue , sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 23px;
+  margin-left: 10px;
+}
+
+.div-card input {
+  width: 15%;
+}
+
+
+input[type="checkbox"] {
+  height: 10px; 
+  width: 10px; 
+  background-color: gainsboro;
+  position: relative;
+  outline: none;
+  transform: rotate(45deg);
+  -webkit-appearance: none; 
+}
+
+input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  background-color: gainsboro;
+  height: 60%;
+  width: 100%;
+  top: -59%;
+  border-radius: 75px 75px 0 0;
+}
+
+input[type="checkbox"]:after {
+  position: absolute;
+  content: "";
+  background-color: gainsboro;
+  height: 60%;
+  width: 100%;
+  transform: rotate(-90deg);
+  border-radius: 75px 75px 0 0;
+  top: 20%;
+  right: 79%;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked:before,
+input[type="checkbox"]:checked:after{
+  background-color: red;
+}

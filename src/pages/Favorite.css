@@ -1,0 +1,12 @@
+.music-fav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.track {
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+}

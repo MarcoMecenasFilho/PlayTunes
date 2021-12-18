@@ -1,0 +1,9 @@
+.loading p {
+  color: #60e215;
+  font-family: Epilogue , sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 65px;
+}

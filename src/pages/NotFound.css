@@ -1,0 +1,33 @@
+div .not {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.not img {
+  width: 20%;
+}
+
+.not div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.not div img {
+  width: 50%;
+}
+
+.not div h2 {
+  color: #023031;
+  font-family: Epilogue , sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 65px;
+  text-align: start;
+  width: 30%;
+}

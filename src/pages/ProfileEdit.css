@@ -1,0 +1,38 @@
+.form-edit {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.form-edit form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.form-edit form input {
+  height: 30px;
+  width: 80%;
+}
+
+.img-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.img-info img {
+  border-radius: 100%;
+  height: 70px;
+  margin-right: 20px;
+  width: 70px;
+}
+
+.form-edit textarea {
+  width: 80%;
+}
