@@ -4,7 +4,7 @@
 
 .header-child {
   align-items: center;
-  background: #023031;
+  background: black;
   box-shadow: 0 4px 1px rgba(0, 0, 0, 0.25);
   display: flex;
   height: 96px;
@@ -14,21 +14,19 @@
 }
 
 .header-child img {
-  height: 70px;
-  margin-bottom: 20px;
+  height: 80px;
   margin-left: 35px;
 }
 
 .header-child p {
-  background: #f0f2f5;
   border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color:  #ffde59;
   display: flex;
   flex-direction: column;
-  font-family: Epilogue , sans-serif;
-  font-size: 25px;
+
+  font-size: 30px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   justify-content: center;
   line-height: 24px;
   margin-right: 50px;
@@ -58,11 +56,11 @@
 }
 
 .a-1 {
-  background-color: #036b52;
-  color: white;
+  background-color: #ffde59;
+  color: black;
 }
 
 .a-2 {
   background-color: #f0f2f5;
-  color: #2fc18c;
+  color: black
 }

@@ -12,6 +12,9 @@
   height: 400px;
   justify-content: space-around;
   width: 30%;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 9px 7px 27px 5px rgba(0,0,0,0.75);
 }
 
 .form-edit form input {

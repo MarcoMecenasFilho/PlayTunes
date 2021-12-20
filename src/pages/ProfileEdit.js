@@ -13,7 +13,7 @@ class ProfileEdit extends React.Component {
       name: '',
       description: 'Lorem ipsum',
       email: 'usuario@usuario.com',
-      image: 'https://cdn.icon-icons.com/icons2/1141/PNG/512/1486395884-account_80606.png',
+      image: 'https://simg.nicepng.com/png/small/128-1280406_view-user-icon-png-user-circle-icon-png.pnghttps://simg.nicepng.com/png/small/128-1280406_view-user-icon-png-user-circle-icon-png.png',
       redirect: false,
     });
   }

@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { createUser } from '../services/userAPI';
 import Loading from './Loading';
 import './Login.css';
-import logo from '../images/logo.png';
+import PLAY from '../images/PLAY.gif';
 
 class Login extends React.Component {
   constructor() {
@@ -38,7 +38,7 @@ class Login extends React.Component {
     if (redirect === true) return <Redirect to="/search" />;
     return (
       <div data-testid="page-login" className="login-page">
-        <img src={ logo } alt="logo" />
+        <img src={ PLAY } alt="logo" />
         <form>
           <input
             type="text"

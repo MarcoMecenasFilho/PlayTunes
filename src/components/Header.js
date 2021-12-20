@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logowhite from '../images/logowhite.png';
+import PLAY from '../images/PLAY.gif';
 import Loading from '../pages/Loading';
 import { getUser } from '../services/userAPI';
 
@@ -27,9 +27,14 @@ class Header extends React.Component {
     const { name, loading } = this.state;
     const headerChild = (
       <div className="header-child">
-        <img src={ logowhite } alt="logo" />
-
-        <p data-testid="header-user-name">{name}</p>
+        <Link to="/">
+          <img src={ PLAY } alt="logo" />
+        </Link>
+        <p data-testid="header-user-name">
+          Usuário:
+          {' '}
+          {name}
+        </p>
       </div>
     );
     return (
