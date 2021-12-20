@@ -13,11 +13,6 @@ class Header extends React.Component {
       loading: true,
     };
   }
-  /* Utilizamos a getUser dentro do componentDidMount ,pois precisamos
-  que ela seja rodada assim que o componente é constuido, então quando renderizamos
-  um componente, como por exemplo o search, apos a renderização e chamada o getUser
-  recuperando o nome preenchido no forms la no login, e inserido no Header e dizemos
-  que loading e false para parar de renderizar. */
 
   componentDidMount() {
     getUser().then((user) => {
@@ -33,18 +28,13 @@ class Header extends React.Component {
     const headerChild = (
       <div className="header-child">
         <img src={ logowhite } alt="logo" />
-        {/* cuidado ao usar template literal, utilizei no name, para deixar mais bonito
-        e o test não estava achando la no requesito 13, pois ele procurava uma palavra
-        especifica, e com o template não ocorria */}
+
         <p data-testid="header-user-name">{name}</p>
       </div>
     );
     return (
       <header data-testid="header-component" className="header">
         <article>
-          {/* Utilizamos um ternario bem simples. se Loading for true
-          renderiza Loading, se for false, renderiza o P com o nome do
-          usuario */}
 
           {loading ? <Loading /> : headerChild}
         </article>

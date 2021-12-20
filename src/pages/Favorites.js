@@ -13,16 +13,10 @@ class Favorites extends React.Component {
       favoriteSongs: [],
     };
   }
-  /* Grande parte da lógica utilizada , foi reptida da utilizana;
-  na pages/album, então as explicações e referências utilizadas lá
-  servem para cá também */
 
   componentDidMount() {
     this.getfavoriteSongs();
   }
-  /* devemos utilizar a func() getFavoriteSongs no componentDidMount, pois
-  deve ser executada depois da constructor e render, pois a pagina já tera os
-  componentes iniciais necessarios para renderizar as faixas  favoritas  */
 
   getfavoriteSongs = async () => {
     this.setState({ loading: true });
@@ -34,22 +28,12 @@ class Favorites extends React.Component {
     });
   };
 
-  /* A função getFavoriteSongs() recupera as musicas que foram marcadas como
-  favorita clicando em seu checkbox, quando ela é chamada diz que o state
-  loading é true e assim renderiza o carregamento, e como é assincrona pede
-  para esperar a favorites terminar, apos finalizar, o  loading para de ser
-  renderizado e o valor recebida da getFavoriteSongs é passado como valor para
-  chave favoriteMusics do state e */
-
   handleFavorite = (music) => {
     if (music) {
       removeSong(music);
     }
     this.getfavoriteSongs();
   }
-  /* a fun() handleFavoritos recebe um objeto como parametro, sendo esse objeto do state favoriteSong
-  e jogo em um if, caso esse objeto exista ele é excluido quando clicamos no checkbox, e a lista
-  deve ser atualizado rodando novamente a função getavoriteSongs */
 
   favoriteSongsList = () => {
     const { favoriteSongs } = this.state;

@@ -18,16 +18,12 @@ class Search extends React.Component {
     this.resultsAlbums = this.resultsAlbums.bind(this);
   }
 
-  /*  Parte da lógica utilizada aqui, foi a mesma do arquivo Login.js, todas
-as justificativas e referências de lá servem para aqui */
   handleChange = ({ target }) => {
     this.setState({
       nameSearch: target.value,
       artistName: target.value,
     });
   };
-  /* O state Validation foi criado para renderizar ou não os albums, ele inicia como false e assim que o search album executa a requisição e retorna algo, ou seja a requisição foi feita sucesso, ele passa para true, e assim é chamado
-  a função resultAlbum, que renderiza o album caso seja encontrado ou a mensagem que nada foi encontrado com aquele nome */
 
   searchAlbum = async (event) => {
     event.preventDefault();
@@ -43,13 +39,6 @@ as justificativas e referências de lá servem para aqui */
       validation: true,
     });
   };
-
-  /* Na função searchAlbum, buscamos a informações na API, sendo que ela retorna
-  uma promise, precisamos fazer essa func() ser async, dizemos que loading é true
-  para renderizar o loading, e chamamos a func() searchAlbumsAPI, e dizemos que
-  a fun() só continua quando for finalizada, assim modificamos os setstates, dizendo
-  loading é false para parar de renderizar e comolamos os albums encontrados dentro
-  do state albumsFound, apagamos o nome digitado na barra e salvamos ele no artistName */
 
   resultsAlbums() {
     const { albumsFound, artistName } = this.state;
@@ -72,11 +61,6 @@ as justificativas e referências de lá servem para aqui */
       </div>
     );
   }
-
-  /*  A func() resulAlbuns utiliza o state albumsfound, que foi preenchido
-  com os albuns enconrtado, e dizemo se o array for vazio ele retorna a mensagem
-  que não encontrou nada, mas caso ache, ele joga esse array, em um map, onde passa
-  o objeto de cada album para o componente AlbumCard por props, onde sera renderizado o album */
 
   render() {
     const { nameSearch, loading, validation } = this.state;
@@ -105,11 +89,6 @@ as justificativas e referências de lá servem para aqui */
         </form>
         { loading && <Loading /> }
         { validation && this.resultsAlbums() }
-        {/* o londing quando é true ele é renderizado, já a validation foi criado
-          para "rodar"  a fun() resultAlbums, apenas quando for true. Para isso acontecer
-           quando a func searchalbum finaliza a request e retorna o array e muda o state da validation
-           para true assim sendo executado a resulalbums, e sendo renderizado
-           ou não, dependendo se o resultado da request encontrou algo na api. */}
       </div>
     );
   }

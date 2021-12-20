@@ -13,11 +13,6 @@ class AlbumCard extends React.Component {
         artistName },
     } = this.props;
 
-    /* O link é criado atraves do album/:collectionId, onde esse numero é passa
-    por props, é uma chave dentro do objeto, e assim gera a url correta, lembrando
-    que em login quando foi feita a route, o path foi feito para que fosse obrigatório
-    rebecer um id, ou algo mais expecifíco  */
-
     return (
       <Link
         className="link-card"

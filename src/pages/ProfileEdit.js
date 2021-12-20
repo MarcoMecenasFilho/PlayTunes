@@ -18,9 +18,6 @@ class ProfileEdit extends React.Component {
     });
   }
 
-  /* Grande parte da loógica foi usado no search, profile e login, suas explicações e
-  referencias valem para cá */
-
   componentDidMount() {
     this.getInfoUser();
   }
@@ -60,10 +57,6 @@ class ProfileEdit extends React.Component {
     const { name, email, image, description, loading, redirect } = this.state;
     const buttonOn = (name.length > 0
       && email.length > 0 && image.length > 0 && description.length > 0);
-
-    /* acessado para fazer a lógica  do button
-        https://github.com/tryber/sd-014-b-project-trybetunes/
-         blob/Ana-Alice-Honorio-TrybeTunes/src/pages/ProfileEdit.js */
 
     const formsUser = (
       <div className="form-edit">

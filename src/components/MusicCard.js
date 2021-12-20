@@ -6,7 +6,6 @@ class MusicCard extends Component {
   render() {
     const {
       music: { trackName, previewUrl, trackId }, favoriteMusics, checked } = this.props;
-    /* A lógica do player foi passado no redme do projeto */
     return (
       <div className="div-card">
         <p>{trackName}</p>
