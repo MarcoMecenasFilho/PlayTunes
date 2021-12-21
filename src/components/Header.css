@@ -64,3 +64,39 @@
   background-color: #f0f2f5;
   color: black
 }
+
+@media screen and (max-width: 680px){
+
+  .nav-links {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-links a {
+    height: 60px;
+    display: flex;
+    font-family: Epilogue , sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: space-around;
+    line-height: 29px;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .a-1 {
+    background-color: #ffde59;
+    color: black;
+  }
+  
+  .a-2 {
+    background-color: #f0f2f5;
+    color: black;
+
+  }
+}
