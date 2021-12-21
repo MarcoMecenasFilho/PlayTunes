@@ -45,12 +45,15 @@ class Album extends React.Component {
 
   searchMusicsAlbum = async () => {
     const { match: { params: { id } } } = this.props;
-    const musics = await getMusics(id);
-
-    this.setState({
-      loading: false,
-      musicList: musics,
-    });
+    try {
+      const musics = await getMusics(id);
+      this.setState({
+        loading: false,
+        musicList: musics,
+      });
+    } catch (error) {
+      alert('Erro com a API, recarregue a página por favor!');
+    }
   }
 
   resultMusicsAlbum = () => {
