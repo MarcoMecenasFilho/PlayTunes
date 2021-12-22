@@ -38,6 +38,7 @@
   margin-top: 5px;
   text-decoration: none;
   width: 90%;
+  overflow: auto;
 }
 
 .album-card p {
@@ -53,4 +54,10 @@
   margin-left: 15px;
   margin-top: 5px;
   overflow: auto;
+}
+
+@media screen and (max-width: 680px){
+  .link-card{
+    width: 70%;
+  }
 }

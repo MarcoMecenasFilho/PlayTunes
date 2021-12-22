@@ -23,7 +23,6 @@
   color:  #ffde59;
   display: flex;
   flex-direction: column;
-
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -66,7 +65,9 @@
 }
 
 @media screen and (max-width: 680px){
-
+  .header-child p {
+    font-size: 15px;
+  }
   .nav-links {
     background: white;
     display: flex;

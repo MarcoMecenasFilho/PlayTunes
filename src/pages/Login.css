@@ -66,3 +66,14 @@
   background: darkgray ;
 }
 
+@media screen and (max-width: 680px){
+  .login-page img {
+    width: 90%;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  .login-page form {
+    margin-top: 20px;
+    width: 80%;
+  }
+}

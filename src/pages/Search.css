@@ -63,4 +63,12 @@
     margin-top: 15px;
   }
 
+  .albums-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+
 }

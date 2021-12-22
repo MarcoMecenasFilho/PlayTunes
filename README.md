@@ -1,4 +1,4 @@
-<img src='./src/images/logopink.gif' width="100%">
+<img src='./src/images/PLAY.gif' width="100%">
 
 <h1 align="center">PlayTunes</h1>
 <h4 align="center"> 
@@ -6,8 +6,7 @@
 </h4>
 <br>
 <h2>Sobre</h2>
-<p align="justify"> Wallet - Casa de Câmbio - É uma carteira digital desenvolvida para a organização de seus gastos em compras internacionais. Podendo Escolher a categoria, método de pagamento, descrição e moeda daquela dispesa. Sendo tudo convertido para Real/BRL e somado automáticamente.
-E sendo possível a edição e exclusão de qualquer despesa. </p 
+<p align="justify"> PlayTunes - É um player de música desenvolvido para que possa escutar e favoritar suas músicas preferidas. Podendo Escolher por album, banda ou cantor. Sendo sua lista de músicas  salvas localmente. Como a API do iTunes é uma amostra, podemos escutar apenas 30 segundos de cada música. Mas podendo escutar quantas vezes desejar. </p 
 
 ### Features
 
@@ -60,16 +59,24 @@ $ npm run dev
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 ```
 <h2>Utilizando a aplicação</h2>
-<p align="justify">A tela inicial da aplicação é a página de login. Onde você adiciona seus dados e entra na carteira em si. Não existe servidores. Então todo o sistema de autenticação é simulado utilizando o localStore. E nenhuma informação é realmente enviada para algum lugar. E caso você não tenha um login, ou tenha esquecido. É só criar um novo usuário.</p>
+<p align="justify">A tela inicial da aplicação é a página de login. Onde pode cadastrar seu nome de usuário  .</p>
 <img src='./src/images/login.gif' width="100%">
 <br>
-<p align="justify">Para criar um novo usuário, basta clicar no botão, e adicionar um email qualquer com formato valido(@ e .com) e uma senha que seja maior que 6 caracteres. Lembrando que não existe backEnd. Todo o sistema de login é uma simulação. Recomendo a utilização de dados fictícios. </p>
-<img src='./src/images/newuser.gif' width="100%">
+
+<p align="justify">Quando efetuamos o Login, somos enviados para a página de pesquisa. Sendo muito simples sua utilização. Inserimos os dados que desejamos na barra de pesquisa e clicamos no botão de pesquisar. todos os albums encontrados, serão mostrados logo abaixo</p>
+<img src='./src/images/search.gif' width="100%">
 <br>
-<p align="justify">Quando efetuamos o Login, somos enviados para a página da carteira. Sendo muito simples sua utilização. Inserimos os dados que desejamos no forms e clicamos no botão de adicionar. Caso desejamos editar essa despesa, clicamos no botão de editar, onde cada despesa possui o seu. Inserimos os novos dados e editamos. Mas caso deseje excluir, apenas clique no botão de excluir na despesa.</p>
-<img src='./src/images/wallet.gif' width="100%">
+
+<p align="justify">Clicando no card desejado, somos redirecionados para a página daquele album. Onde temos informações da banda ou artista. E podemos ver e escutar as faixas de músicas(Lembrando que é uma API de demonstração, podemos escutar apenas 30s de cada faixa.)</p>
+<img src='./src/images/album.gif' width="100%">
 <br>
-<p align="justify"> As despesa são armazenadas no localStore. Então caso feche seu navegador ou até mesmo desligue seu computador. Elas permaneceram salvas. Criar um novo usuário também não as modifica. </p>
+<p align="justify">Para favoritar as músicas, basta clicar no coração e depois ir para aba favorites. onde a lista de faixas favoritas são mostradas. Para excluir uma faixa, na aba favorites basta clicar no coração novamente.</p>
+<img src='./src/images/favorite.gif' width="100%">
+<br>
+<p align="justify">Para visualizar ser perfil, basta clicar na aba profile. Inialmente só tera o seu nome, então clique no botão editar perfil, onde pode adicionar suas informações. Para adicionar uma novo imagem, basta inserir a url da mesma.</p>
+<img src='./src/images/profile.gif' width="100%">
+<br>
+
 
 ### Rodando os testes
 ```bash

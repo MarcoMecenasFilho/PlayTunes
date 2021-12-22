@@ -62,7 +62,9 @@ class Album extends React.Component {
       <section className="album">
         {console.log(musicList)}
         <div className="info-album">
-          <img src={ musicList[0].artworkUrl100 } alt="album" />
+          {musicList.length === 0 ? alert(`Erro com a API,clique em ok
+        e  recarregue a página.`)
+            : <img src={ musicList[0].artworkUrl100 } alt="album" />}
           <h2 data-testid="album-name">{musicList[0].collectionName}</h2>
           <h3 data-testid="artist-name">{musicList[0].artistName}</h3>
         </div>
