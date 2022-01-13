@@ -30,7 +30,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 <h4>Clique na imagem abaixo</h4>
 <br>
 <div align="center">
-<a  href="https://playtunes.herokuapp.com/search" target="_blank"><img width="40%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" /></a> 
+<a  href="https://playtunes.herokuapp.com/" target="_blank"><img width="40%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" /></a> 
 </div>
 <br>
 <h2>Instalar o projeto em sua máquina</h2>
@@ -77,19 +77,6 @@ $ npm run dev
 <img src='./src/images/profile.gif' width="100%">
 <br>
 
-
-### Rodando os testes
-```bash
-# Para rodar os testes, da página de login, use o comando
-$ npm test ./tests/login.test.js
-
-# Para rodar os testes, da página de novo usuário, use o comando
-$ npm test ./tests/newuser.test.js
-
-# Para rodar os testes, da página da carteira, use o comando
-$ npm test ./tests/wallet.test.js
-
-```
 
 ## 📝 Licença
 
