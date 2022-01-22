@@ -6,7 +6,7 @@
 </h4>
 <br>
 <h2>Sobre</h2>
-<p align="justify"> PlayTunes - É um player de música desenvolvido para que possa escutar e favoritar suas músicas preferidas. Podendo Escolher por album, banda ou cantor. Sendo sua lista de músicas  salvas localmente. Como a API do iTunes é uma amostra, podemos escutar apenas 30 segundos de cada música. Mas podendo escutar quantas vezes desejar. </p 
+<p align="justify"> PlayTunes - É um player de música desenvolvido para  escutar e favoritar suas músicas. Podendo Escolher por album, banda ou cantor. Sendo sua lista de músicas  salvas localmente. Como a API do iTunes é uma amostra, podemos escutar apenas 30 segundos de cada música. Mas podendo escutar quantas vezes desejar. </p 
 
 ### Features
 
@@ -67,13 +67,13 @@ $ npm run dev
 <img src='./src/images/search.gif' width="100%">
 <br>
 
-<p align="justify">Clicando no card desejado, somos redirecionados para a página daquele album. Onde temos informações da banda ou artista. E podemos ver e escutar as faixas de músicas(Lembrando que é uma API de demonstração, podemos escutar apenas 30s de cada faixa.)</p>
+<p align="justify">Clicando no card desejado, somos redirecionados para a página daquele album. Onde temos informações da banda ou artista. E podemos ver e escutar as faixas (Lembrando que é uma API de demonstração, podemos escutar apenas 30s de cada faixa.)</p>
 <img src='./src/images/album.gif' width="100%">
 <br>
 <p align="justify">Para favoritar as músicas, basta clicar no coração e depois ir para aba favorites. onde a lista de faixas favoritas são mostradas. Para excluir uma faixa, na aba favorites basta clicar no coração novamente.</p>
 <img src='./src/images/favorite.gif' width="100%">
 <br>
-<p align="justify">Para visualizar ser perfil, basta clicar na aba profile. Inialmente só tera o seu nome, então clique no botão editar perfil, onde pode adicionar suas informações. Para adicionar uma novo imagem, basta inserir a url da mesma.</p>
+<p align="justify">Para visualizar seu perfil, basta clicar na aba profile. Inialmente só tera o seu nome, então clique no botão editar perfil, onde pode adicionar suas informações. Para adicionar uma novo imagem, basta inserir a url da mesma.</p>
 <img src='./src/images/profile.gif' width="100%">
 <br>
 
