@@ -22,8 +22,6 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [React](https://pt-br.reactjs.org/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
 - [Node.js](https://nodejs.org/en/)
-- [RTL](https://testing-library.com/docs/react-testing-library/intro/)
-- [Jest](https://jestjs.io/pt-BR/)
 - [API-iTunes](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html#//apple_ref/doc/uid/TP40017632-CH5-SW1)
 
 <h2>Testar o projeto</h2>
